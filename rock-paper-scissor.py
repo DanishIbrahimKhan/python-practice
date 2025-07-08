@@ -4,7 +4,9 @@ emoji = {"r":"🪨", "p":"📃", "s": "✂️"}
 while True:
     users_input = input("Inter guess = Rock, Paper, Scissor (r/p/s) : ")
     computer_choice = random.choice(choices)
-    if(users_input not in choices):
+    if(users_input == "n"):
+        break
+    elif(users_input not in choices):
        print("inter a valid guess")
     elif(users_input == computer_choice):
        print("Tie !! 😕😕")
